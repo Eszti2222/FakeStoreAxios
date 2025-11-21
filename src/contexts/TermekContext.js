@@ -6,6 +6,20 @@ export const TermekContext = createContext("");
 export const TermekProvider = ({ children }) => {
   const [ termekLista, setTermekLista ] = useState([]);
 
+    function postTermek(adat) {
+    console.log(adat);
+    axios
+      .post("https://fakestoreapi.com/products",adat)
+      .then(function (response) {
+        console.log(response);
+
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
+
+
   function deleteTermek(adat) {
     console.log(adat);
     axios

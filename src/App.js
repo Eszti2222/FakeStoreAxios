@@ -1,7 +1,6 @@
-
-import './App.css';
-import TermekekAdmin from './components/admin/TermekekAdmin';
-
+import "./App.css";
+import TermekekAdmin from "./components/admin/TermekekAdmin";
+import TermekUrlapAdmin from "./components/admin/TermekUrlapAdmin";
 
 function App() {
   return (
@@ -9,10 +8,11 @@ function App() {
       <header className="App-header">
         <h1>FakeStore</h1>
       </header>
+      <section>
+        <TermekUrlapAdmin />
+      </section>
       <article>
-       
-          <TermekekAdmin/>
-      
+        <TermekekAdmin />
       </article>
     </div>
   );
